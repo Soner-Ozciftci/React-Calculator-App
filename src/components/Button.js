@@ -3,7 +3,7 @@ import './Button.css'
 
 function Button() {
   return (
-    <div>Button</div>
+    <div className='button-wrappet'>TEST</div>
   )
 }
 
