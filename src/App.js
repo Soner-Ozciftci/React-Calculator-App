@@ -32,6 +32,7 @@ function App() {
   <Button symbol="="/>
   <Button symbol="-"/>
   </div>
+  <Button symbol="Clear"/>
 </div>
     </div>
   );
