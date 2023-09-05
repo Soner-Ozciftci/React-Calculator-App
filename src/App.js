@@ -7,10 +7,14 @@ function App() {
   const [text,setText] = useState("")
   const [result,setResult] = useState("")
 
+  const addToText = (val) => {
+    setText((text)=> [...text,val + " "])
+  }
+
   return (
     <div className="App">
 <div className='calc-wrapper'>
-  <Input/>
+  <Input text={text} result={result} />
   <div className='row'>
   <Button symbol="7"/>
   <Button symbol="8"/>
