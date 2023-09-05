@@ -3,7 +3,9 @@ import './Button.css'
 
 function Button({symbol,color,handleClick}) {
   return (
-    <div className='button-wrapper' style={{backgroundColor : color}}>{symbol}</div>
+    <div 
+    onClick={()=> handleClick(symbol)}
+    className='button-wrapper' style={{backgroundColor : color}}>{symbol}</div>
   )
 }
 
