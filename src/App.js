@@ -32,7 +32,7 @@ function App() {
   <Button symbol="="/>
   <Button symbol="-"color="#00ad85"/>
   </div>
-  <Button symbol="Clear"/>
+  <Button symbol="Clear" color="red"/>
 </div>
     </div>
   );
