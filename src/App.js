@@ -4,6 +4,9 @@ import Button from './components/Button'
 import Input from './components/Input'
 
 function App() {
+  const [text,setText] = useState("")
+  const [result,setResult] = useState("")
+
   return (
     <div className="App">
 <div className='calc-wrapper'>
