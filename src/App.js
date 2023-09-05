@@ -14,6 +14,7 @@ function App() {
 
 const calculateResult = ()=> {
   const input = text.join("")
+  setResult(math.evaluate(input))
 }
 
 const resetInput = ()=>{
@@ -46,7 +47,7 @@ const resetInput = ()=>{
   <div className='row'>
   <Button symbol="0" handleClick={addToText}/>
   <Button symbol="." handleClick={addToText}/>
-  <Button symbol="="/>
+  <Button symbol="=" handleClick={calculateResult}/>
   <Button symbol="-"color="#00ad85" handleClick={addToText}/>
   </div>
   <Button symbol="Clear" color="red" handleClick={resetInput} />
