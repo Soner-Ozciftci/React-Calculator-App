@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import * as math from 'mathjs'
 import './App.css';
 import Button from './components/Button'
 import Input from './components/Input'
@@ -10,6 +11,15 @@ function App() {
   const addToText = (val) => {
     setText((text)=> [...text,val + " "])
   }
+
+const calculateResult = ()=> {
+  const input = text.join("")
+}
+
+const resetInput = ()=>{
+  setText("");
+  setResult("");
+}
 
   return (
     <div className="App">
@@ -39,7 +49,7 @@ function App() {
   <Button symbol="="/>
   <Button symbol="-"color="#00ad85" handleClick={addToText}/>
   </div>
-  <Button symbol="Clear" color="red"/>
+  <Button symbol="Clear" color="red" handleClick={resetInput} />
 </div>
     </div>
   );
